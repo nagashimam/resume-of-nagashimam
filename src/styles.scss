@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+// TODO: ビルド時に警告がでるので調査
+/**
+▲ [WARNING] 33 rules skipped due to selector errors:
+  :where() -> Empty sub-selector
+  :where(a:not([role=button])):is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
+  [role=link]:is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
+  :where(a:not([role=button])).secondary:is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
+  [role=link].secondary:is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
+  :where(a:not([role=button])).contrast:is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
+  [role=link].contrast:is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
+  button:is() -> Empty sub-selector
+  [type=submit]:is() -> Empty sub-selector
+  [type=reset]:is() -> Empty sub-selector
+  [type=button]:is() -> Empty sub-selector
+  [type=file]:is() -> Empty sub-selector
+  [role=button]:is() -> Empty sub-selector
+  :is(button,[type=submit],[type=button],[role=button]).secondary:is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
+  [type=reset]:is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
+  [type=file]:is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
+  :is(button,[type=submit],[type=button],[role=button]).contrast:is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
+  :is(button,[type=submit],[type=button],[role=button]).outline:is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
+  [type=reset].outline:is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
+  :is(button,[type=submit],[type=button],[role=button]).outline.secondary:is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
+  [type=reset].outline:is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
+  :is(button,[type=submit],[type=button],[role=button]).outline.contrast:is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
+  input:not([type=submit],[type=button],[type=reset],[type=checkbox],[type=radio],[readonly]):is() -> Empty sub-selector
+  :where(select,textarea):not([readonly]):is() -> Empty sub-selector
+  input:not([type=submit],[type=button],[type=reset],[role=switch],[readonly]):is() -> Empty sub-selector
+  :where(select,textarea):not([readonly]):is() -> Empty sub-selector
+  :where(input,select,textarea)[aria-invalid=false]:is() -> Empty sub-selector
+  :where(input,select,textarea)[aria-invalid=false]:is():not([type=checkbox],[type=radio]) -> Empty sub-selector
+  :where(input,select,textarea)[aria-invalid=true]:is() -> Empty sub-selector
+  :where(input,select,textarea)[aria-invalid=true]:is():not([type=checkbox],[type=radio]) -> Empty sub-selector
+  [type=file]:is() -> Empty sub-selector
+  dialog article .close:is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
+  dialog article :is(a,button)[rel=prev]:is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
+*/
+@use "@picocss/pico/scss/pico";

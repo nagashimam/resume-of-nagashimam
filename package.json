@@ -10,6 +10,7 @@
     "test": "ng test",
     "serve:ssr:resume-of-nagashimam": "node dist/resume-of-nagashimam/server/server.mjs",
     "update-qiita-articles": "node scripts/get-qiita-articles.cjs > src/assets/articles/qiita.json; npx prettier --write src/assets/articles/qiita.json",
+    "update-articles": "node scripts/merge-articles.cjs > src/assets/articles/articles.json; npx prettier --write src/assets/articles/articles.json",
     "lint": "ng lint"
   },
   "private": true,

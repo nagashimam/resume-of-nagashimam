@@ -1,0 +1,107 @@
+<section>
+  <h2>自己紹介</h2>
+  <p>
+    山梨在住のフロントエンドエンジニアです。ベトナムで日本語教師を経験したのちにエンジニアに転身し、物流倉庫で用いるAndroidアプリの開発担当として経験を積みました。現在はWeb技術をベースにした金融系アプリ開発に携わり、Angularを主に業務で利用しています。社内初の内製フロントエンドエンジニアとして技術的な基準を整備しながら、アクセシビリティとコード品質の改善に注力しています。<a
+      href="https://example.com"
+      >職務経歴</a
+    >
+  </p>
+  <p>
+    私の目標は、アクセシブルなWebアプリをつくることで、より多くの人が自身の能力を発揮する機会を持てるようにすることです。これによりどのような価値が社会に提案されるのか、それを受け社会全体がどのように変化していくのかを見たいと思っています。
+  </p>
+</section>
+<section>
+  <h2 id="table-title">プロフィール</h2>
+  <table aria-labelledby="table-title">
+    <tbody>
+      <tr>
+        <th>名前</th>
+        <td>長島 雅人(ながしま まさと)</td>
+      </tr>
+      <tr>
+        <th>生年月日</th>
+        <td>1991年10月16日</td>
+      </tr>
+      <tr>
+        <th>Emailアドレス</th>
+        <td>masato.ngsm&#64;gmail.com</td>
+      </tr>
+      <tr>
+        <th>趣味</th>
+        <td>落語(聞いたり時々演じたり)</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<section>
+  <h2>SNS/ソーシャルメディア</h2>
+  <ul>
+    <li><a href="https://github.com/nagashimam">GitHub</a></li>
+    <li><a href="https://twitter.com/masato987">X(Twitter)</a></li>
+    <li>
+      <a
+        href="https://www.linkedin.com/in/%E9%9B%85%E4%BA%BA-%E9%95%B7%E5%B3%B6-8b61b9192/"
+        >Linkedin</a
+      >
+    </li>
+  </ul>
+</section>
+<section>
+  <h2>ブログ</h2>
+  <h3>個人ブログ</h3>
+  <ul>
+    @for (article of newArticles; track article.title) {
+      <li>
+        <a [href]="article.url">{{ article.title }}</a>
+      </li>
+    }
+  </ul>
+  <!-- until-foundを用いた実装に変える https://www.tak-dcxi.com/article/use-until-found-for-hiding-tabs-and-accordions -->
+  <details>
+    <summary>2022年以前の記事</summary>
+    @for (article of oldArticles; track article.title) {
+      <li>
+        <a [href]="article.url">{{ article.title }}</a>
+      </li>
+    }
+  </details>
+  <h3>所属先ブログ</h3>
+  <ul>
+    <li>
+      <a href="https://note.minna-no-ginko.com/n/n7d612e8d95e5"
+        >UI開発におけるStorybookの活用法って？</a
+      >
+    </li>
+    <li>
+      <a href="https://note.minna-no-ginko.com/n/n84637dd5b03a"
+        >アプリのアクセシビリティを改善しています</a
+      >
+    </li>
+    <li>
+      <a href="https://qiita.com/m-nagashima-zdf/items/eae175ca0b21828b40b4"
+        >アプリのアクセシビリティ改善で行っていること</a
+      >
+    </li>
+  </ul>
+</section>
+<section>
+  <h2>イベント登壇</h2>
+  <ul>
+    <li>
+      <a href="https://peatix.com/event/3728624?lang=ja"
+        >一般社団法人電子決済等代行事業者協会主催
+        ウェブアクセシビリティ勉強会</a
+      >
+    </li>
+  </ul>
+</section>
+<section>
+  <h2>コミュニティ</h2>
+  <ul>
+    <li>
+      <a href="https://jaguer.jp/mobileapp/"
+        >Google Cloud 公式ユーザー会 Jagu'e'r モバイル/スマホアプリ分科会運営</a
+      >
+    </li>
+  </ul>
+</section>

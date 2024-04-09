@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build; cp -r dist/resume-of-nagashimam/browser ./; mv browser docs",
+    "build": "rm -r docs;ng build; cp -r dist/resume-of-nagashimam/browser ./; mv browser docs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:resume-of-nagashimam": "node dist/resume-of-nagashimam/server/server.mjs",

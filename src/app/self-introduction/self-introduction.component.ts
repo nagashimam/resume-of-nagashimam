@@ -29,8 +29,6 @@ export class SelfIntroductionComponent implements OnInit {
       (article) => new Date(article.body_updated_at).getFullYear() < 2023,
     );
     this.newArticles = articles.slice(0, newArticlesIndex);
-    console.log(this.newArticles);
     this.oldArticles = articles.slice(newArticlesIndex);
-    console.log(this.oldArticles);
   }
 }

@@ -37,3 +37,8 @@
   dialog article :is(a,button)[rel=prev]:is([aria-current]:not([aria-current=false]),,) -> Empty sub-selector
 */
 @use "@picocss/pico/scss/pico";
+
+// TODO: CSS変数の設計をする
+body {
+  padding: 16px;
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import articleData from '../../assets/articles/articles.json';
+import { RouterLink } from '@angular/router';
 
 interface Article {
   title: string;
@@ -10,7 +11,9 @@ interface Article {
 @Component({
   selector: 'app-self-introduction',
   standalone: true,
-  imports: [],
+  // TODO: angular.devの設定を加えるとどのように挙動が変わるか確認
+  // https://angular.dev/guide/routing/router-tutorial#identify-the-active-route
+  imports: [RouterLink],
   templateUrl: './self-introduction.component.html',
   styleUrl: './self-introduction.component.scss',
 })
